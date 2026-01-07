@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="robots" content="noindex, nofollow" />
+  <title>T06 – Portfolio eksamen</title>
+
+  <link rel="stylesheet" href="variables.css" />
+  <link rel="stylesheet" href="general.css" />
+  <link rel="stylesheet" href="typography.css" />
+  <link rel="stylesheet" href="layout.css" />
+  <link rel="stylesheet" href="components.css" />
+  <link rel="stylesheet" href="pages/tema.css" />
+  <link rel="stylesheet" href="themes/light.css" id="theme-css" />
+</head>
+
+<body class="page-tema">
+  <!-- HEADER -->
+  <header class="topbar">
+    <a href="index.html" class="topbar__logo">
+      <img src="sc-logo.webp" alt="Logo" />
+    </a>
+  </header>
+
+  <main class="tema-container">
+    <!-- HERO -->
+    <section class="tema-hero">
+      <h1 class="tema-title">T06 – Portfolio eksamen</h1>
+      <p class="tema-text">
+        I Tema 6 samlede jeg mine projekter og byggede mit portfolio-site. Fokus var at skabe en overskuelig
+        præsentation af mit arbejde, med et tydeligt visuelt udtryk og en brugervenlig navigation på både mobil og desktop.
+      </p>
+    </section>
+
+    <!-- LØSNING -->
+    <section class="tema-section" id="losning">
+      <h2 class="tema-heading">Løsning</h2>
+
+      <div class="tema-grid">
+        <div class="tema-text">
+          <p>
+            Jeg har udviklet et portfolio-site med forside, om-mig-side og temasider, hvor man kan se mine projekter og min læring.
+            Designet er bygget op med et gennemgående farve- og typografisystem, så udtrykket føles konsekvent på tværs af sider.
+          </p>
+        </div>
+
+        <figure class="tema-image">
+          <img src="eksamen.png" alt="Screenshot af portfolio forside" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- PROCES -->
+    <section class="tema-section" id="proces">
+      <h2 class="tema-heading">Proces</h2>
+
+      <div class="tema-grid reverse">
+        <figure class="tema-image">
+          <img src="prototype.svg" alt="Proces: struktur, navigation og responsivitet" />
+        </figure>
+
+        <div class="tema-text">
+          <p>
+            Jeg startede med at planlægge struktur og navigation, så det er nemt at finde rundt mellem forsiden, om mig og temaerne.
+            Derefter byggede jeg layoutet og gjorde siden responsiv med mobile-first og media queries.
+          </p>
+          <p>
+            Undervejs testede jeg på flere skærmstørrelser og justerede spacing, typografisk hierarki og klikflader,
+            så brugeroplevelsen føles mere stabil.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LÆRING -->
+    <section class="tema-section" id="laering">
+      <h2 class="tema-heading">Læring</h2>
+
+      <div class="tema-grid">
+        <div class="tema-text">
+          <p>
+            Arbejdet med portfolio-eksamen har styrket min evne til at anvende centrale principper inden for design, brugergrænseflader og front-end-udvikling 
+            i et samlet projekt. Jeg har arbejdet systematisk med struktur, navigation og responsivt design samt anvendt relevante teknologier og metoder i praksis. 
+            Processen har gjort mig mere sikker i at planlægge, udvikle og formidle et digitalt produkt med fokus på brugervenlighed og helhed.
+        </div>
+
+        <figure class="tema-image">
+          <img src="moodboard.png" alt="Læring: komponenter og designvalg" />
+        </figure>
+      </div>
+    </section>
+
+ 
+    <!-- TEMA NAVIGATION -->  
+    <nav class="tema-nav" aria-label="Skift mellem temaer">
+  <a class="tema-nav__prev" href="tema5.html">
+    <div class="tema-nav__label">← Forrige</div>
+    <div class="tema-nav__title">T05 – Grundlæggende indhold</div>
+  </a> 
+</nav>
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar is-closed" aria-label="Hovedmenu">
+    <button class="sidebar__toggle" type="button" aria-label="Åbn/luk menu">▶</button>
+    <nav class="menu">
+      <h3 class="menu__title">MENU</h3>
+      <a class="menu__link" href="index.html">FORSIDE</a>
+      <a class="menu__link" href="om-mig.html">OM MIG</a>
+      <a class="menu__link" href="portfolio.html">PORTFOLIO</a>
+
+      <div class="menu__sublinks" aria-label="Portfolio temaer">
+        <a class="menu__sublink" href="tema1.html">T01 – Introuge</a>
+        <a class="menu__sublink" href="tema2.html">T02 – Grundlæggende web</a>
+        <a class="menu__sublink" href="tema3.html">T03 – Grundlæggende UX/UI</a>
+        <a class="menu__sublink" href="tema4.html">T04 – Brugergrænsefladeudvikling</a>
+        <a class="menu__sublink" href="tema5.html">T05 – Grundlæggende indhold</a>
+        <a class="menu__sublink" href="tema6.html">T06 – Portfolio eksamen</a>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- TEMA-SKIFT -->
+  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Skift tema">☾</button>
+
+  <!-- JS -->
+  <script src="dom.js"></script>
+  <script src="storage.js"></script>
+  <script src="nav.js"></script>
+  <script src="theme.js"></script>
+  <script src="main.js"></script>
+<footer class="site-footer">
+  <p>Lavet af <strong>Sara Catia</strong></p>
+</footer>
+
+</body>
+</html>

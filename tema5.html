@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="robots" content="noindex, nofollow" />
+  <title>T05 – Grundlæggende indhold</title>
+
+  <link rel="stylesheet" href="variables.css" />
+  <link rel="stylesheet" href="general.css" />
+  <link rel="stylesheet" href="typography.css" />
+  <link rel="stylesheet" href="layout.css" />
+  <link rel="stylesheet" href="components.css" />
+  <link rel="stylesheet" href="pages/tema.css" />
+  <link rel="stylesheet" href="themes/light.css" id="theme-css" />
+</head>
+
+<body class="page-tema">
+  <header class="topbar">
+    <a href="index.html" class="topbar__logo">
+      <img src="sc-logo.webp" alt="Logo" />
+    </a>
+  </header>
+
+  <main class="tema-container">
+    <section class="tema-hero">
+      <h1 class="tema-title">T05 – Grundlæggende indhold</h1>
+      <p class="tema-text">
+        Tema 5 handler om indhold, storytelling og at formidle et budskab gennem tekst, billeder og video.
+        På min portfolio har jeg brugt de samme principper til at skabe overblik, en tydelig rød tråd og en brugervenlig struktur.
+      </p>
+    </section>
+
+    <section class="tema-section">
+      <h2 class="tema-heading">Fokus</h2>
+      <div class="tema-grid">
+        <div class="tema-text">
+          <ul>
+            <li><strong>Storytelling & formidling:</strong> tydeligt budskab og prioritering af indhold.</li>
+            <li><strong>Informationsarkitektur:</strong> struktur der gør det nemt at finde det man leder efter.</li>
+            <li><strong>Visuelt hierarki:</strong> typografi og spacing der skaber overblik.</li>
+            <li><strong>Brugeroplevelse:</strong> indhold der understøtter navigation og flow.</li>
+          </ul>
+
+          <p>
+            Jeg bruger temaets læring direkte i portfolioen ved at arbejde med klare sektioner, konsistente overskrifter
+            og et visuelt udtryk, der hjælper brugeren med at orientere sig.
+          </p>
+        </div>
+
+        <figure class="tema-image">
+          <img src="gluten3.png" alt="diagram" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="tema-section">
+      <h2 class="tema-heading">Læring</h2>
+      <div class="tema-grid reverse">
+        <figure class="tema-image">
+          <img src="2tema2.png" alt="kode" />
+        </figure>
+
+        <div class="tema-text">
+          <p>
+            Jeg har fået en bedre forståelse for, hvordan indhold og design hænger sammen: Når tekst og billeder er
+            prioriteret rigtigt, bliver siden både mere troværdig og nemmere at bruge.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEMA NAVIGATION -->  
+    <nav class="tema-nav" aria-label="Skift mellem temaer">
+  <a class="tema-nav__prev" href="tema4.html">
+    <div class="tema-nav__label">← Forrige</div>
+    <div class="tema-nav__title">T04 – Brugergrænsefladeudvikling</div>
+  </a>
+
+  <a class="tema-nav__next" href="tema6.html">
+    <div class="tema-nav__label">Næste →</div>
+    <div class="tema-nav__title">T06 – Portfolio eksamen</div>
+  </a>
+</nav>
+
+  </main>
+
+  <aside class="sidebar is-closed" aria-label="Hovedmenu">
+    <button class="sidebar__toggle" type="button" aria-label="Åbn/luk menu">▶</button>
+    <nav class="menu">
+      <h3 class="menu__title">MENU</h3>
+      <a class="menu__link" href="index.html">FORSIDE</a>
+      <a class="menu__link" href="om-mig.html">OM MIG</a>
+      <a class="menu__link" href="portfolio.html">PORTFOLIO</a>
+      <div class="menu__sublinks" aria-label="Portfolio temaer">
+        <a class="menu__sublink" href="tema1.html">T01 – Introuge</a>
+        <a class="menu__sublink" href="tema2.html">T02 – Grundlæggende web</a>
+        <a class="menu__sublink" href="tema3.html">T03 – Grundlæggende UX/UI</a>
+        <a class="menu__sublink" href="tema4.html">T04 – Brugergrænsefladeudvikling</a>
+        <a class="menu__sublink" href="tema5.html">T05 – Grundlæggende indhold</a>
+        <a class="menu__sublink" href="tema6.html">T06 – Portfolio eksamen</a>
+      </div>
+    </nav>
+  </aside>
+
+  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Skift tema">☾</button>
+
+  <script src="dom.js"></script>
+  <script src="storage.js"></script>
+  <script src="nav.js"></script>
+  <script src="theme.js"></script>
+  <script src="main.js"></script>
+<footer class="site-footer">
+  <p>Lavet af <strong>Sara Catia</strong></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+/* Portfolio undermenu */
+.menu__sublinks{
+  margin-top: 10px;
+  padding-left: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.menu__sublink{
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: var(--text);
+  opacity: 0.85;
+  padding: 6px 10px;
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.menu__sublink:hover{
+  opacity: 1;
+  border-left-color: var(--accent);
+  background: rgba(255, 107, 53, 0.08);
+}
+
+/* Link som knap */
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 18px;
+  border-radius: 999px;
+
+  background: var(--accent);
+  color: var(--text-on-accent, #fff);
+  text-decoration: none;
+  font-weight: 800;
+
+  border: 3px solid var(--text);
+  box-shadow: 8px 8px 0 var(--shadow-color);
+
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.btn:hover{
+  transform: translate(-2px, -2px);
+  box-shadow: 10px 10px 0 var(--shadow-color);
+}
+
+.btn:active{
+  transform: translate(0, 0);
+  box-shadow: 6px 6px 0 var(--shadow-color);
+}
+
+.btn:focus-visible{
+  outline: 3px solid var(--text);
+  outline-offset: 3px;
+}
+
+.site-footer {
+  padding: 2rem 1rem;
+  text-align: center;
+  background: var(--panel);
+  color: var(--text);
+  border-top: 1px solid var(--line);
+}
+
+.site-footer a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}

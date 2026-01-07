@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="robots" content="noindex, nofollow" />
+  <title>T03 – Grundlæggende UX/UI</title>
+
+  <link rel="stylesheet" href="variables.css" />
+  <link rel="stylesheet" href="general.css" />
+  <link rel="stylesheet" href="typography.css" />
+  <link rel="stylesheet" href="layout.css" />
+  <link rel="stylesheet" href="components.css" />
+  <link rel="stylesheet" href="pages/tema.css" />
+  <link rel="stylesheet" href="themes/light.css" id="theme-css" />
+</head>
+
+<body class="page-tema">
+  <!-- HEADER -->
+  <header class="topbar">
+    <a href="index.html" class="topbar__logo">
+      <img src="sc-logo.webp" alt="Logo" />
+    </a>
+  </header>
+
+  <main class="tema-container">
+    <!-- HERO -->
+    <section class="tema-hero">
+      <h1 class="tema-title">T03 – Grundlæggende UX/UI</h1>
+      <p class="tema-text">
+        I tema 3 arbejdede jeg med de grundlæggende principper inden for webudvikling, 
+        herunder semantisk HTML, CSS (Grid og Flexbox), mobile-first design og media queries. 
+        Forløbet gav mig en solid forståelse for, hvordan struktur, layout og responsivitet spiller 
+        sammen i opbygningen af en velfungerende hjemmeside.
+      </p>
+    </section>
+
+    <!-- LØSNING -->
+    <section class="tema-section" id="losning">
+      <h2 class="tema-heading">Løsning</h2>
+
+      <div class="tema-grid">
+        <div class="tema-text">
+          <p>
+          Jeg udviklede en responsiv hjemmeside med fokus på en klar struktur og brugervenlig opbygning. 
+          Arbejdet tog udgangspunkt i mobile-first-princippet, hvor jeg først designede til mobil og derefter 
+          skalerede layoutet til større skærme ved hjælp af media queries.
+          Undervejs arbejdede jeg bevidst med semantisk HTML og CSS Grid/Flexbox for at skabe et overskueligt og fleksibelt layout.
+          </p>
+        </div>
+
+        <figure class="tema-image">
+          <img src="glutenfri.png" alt="Screenshot af Tema 2 løsning" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- PROCES -->
+    <section class="tema-section" id="proces">
+      <h2 class="tema-heading">Proces</h2>
+
+      <div class="tema-grid reverse">
+        <figure class="tema-image">
+          <img src="gluten2.svg" alt="Proces: skitser, wireframes og struktur" />
+        </figure>
+
+        <div class="tema-text">
+          <p>
+            Jeg arbejdede med hele designprocessen for Glutenfri Førstehjælp – fra de første idéer og research til 
+            wireframes, prototyper og færdigt layout. Det var fedt selv at være med hele vejen, og undervejs testede jeg 
+            løbende og justerede UI og UX for at skabe en hjemmeside, der er overskuelig og nem at bruge.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LÆRING -->
+    <section class="tema-section" id="laering">
+      <h2 class="tema-heading">Læring</h2>
+
+      <div class="tema-grid">
+        <div class="tema-text">
+          Forløbet gav mig en større forståelse for, hvor vigtig brugeroplevelsen er, når man designer en hjemmeside. 
+          Jeg lærte, hvordan struktur, overblik og tydelige valg har stor betydning for, om en side er nem at bruge. 
+          Gennem løbende test og justeringer blev jeg mere bevidst om, hvordan små ændringer i layout og indhold kan forbedre 
+          oplevelsen for brugeren.</li>
+          
+        </div>
+
+        <figure class="tema-image">
+          <img src="gluten3.png" alt="Læring: eksempel fra tema 2" />
+        </figure>
+      </div>
+    </section>
+  
+
+ <!-- AFLEVERINGER -->
+<section class="tema-section">
+  <h2 class="tema-heading">Afleveringer</h2>
+
+  <div class="tema-grid">
+    <div class="tema-text">
+      <h3>02.01.01 – Glutenfri Førstehjælp</h3>
+      <p>
+        <a class="btn" href="https://saracatia.github.io/glutenfri-help/" target="_blank" rel="noopener noreferrer">
+          Åbn afleveringen (GitHub Pages)
+        </a>
+      </p>
+    </div>
+
+    <div class="tema-image">
+      <img src="glutenfri.png" alt="Screenshot af Glutenfri Førstehjælp" />
+    </div>
+  </div>
+</section>
+
+<nav class="tema-nav" aria-label="Skift mellem temaer">
+  <a class="tema-nav__prev" href="tema2.html">
+    <div class="tema-nav__label">← Forrige</div>
+    <div class="tema-nav__title">T02 – Grundlæggende web</div>
+  </a>
+
+  <a class="tema-nav__next" href="tema4.html">
+    <div class="tema-nav__label">Næste →</div>
+    <div class="tema-nav__title">T04 – Brugergrænsefladeudvikling</div>
+  </a>
+</nav>
+
+</main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar is-closed" aria-label="Hovedmenu">
+    <button class="sidebar__toggle" type="button" aria-label="Åbn/luk menu">▶</button>
+    <nav class="menu">
+      <h3 class="menu__title">MENU</h3>
+      <a class="menu__link" href="index.html">FORSIDE</a>
+      <a class="menu__link" href="om-mig.html">OM MIG</a>
+      <a class="menu__link" href="portfolio.html">PORTFOLIO</a>
+
+      <div class="menu__sublinks" aria-label="Portfolio temaer">
+        <a class="menu__sublink" href="tema1.html">T01 – Introuge</a>
+        <a class="menu__sublink" href="tema2.html">T02 – Grundlæggende web</a>
+        <a class="menu__sublink" href="tema3.html">T03 – Grundlæggende UX/UI</a>
+        <a class="menu__sublink" href="tema4.html">T04 – Brugergrænsefladeudvikling</a>
+        <a class="menu__sublink" href="tema5.html">T05 – Grundlæggende indhold</a>
+        <a class="menu__sublink" href="tema6.html">T06 – Portfolio eksamen</a>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- TEMA-SKIFT KNAP -->
+  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Skift tema">☾</button>
+
+  <!-- JS -->
+  <script src="dom.js"></script>
+  <script src="storage.js"></script>
+  <script src="nav.js"></script>
+  <script src="theme.js"></script>
+  <script src="main.js"></script>
+  <script src="tema2.js"></script>
+
+<footer class="site-footer">
+  <p>Lavet af <strong>Sara Catia</strong></p>
+</footer>
+
+</body>
+</html>

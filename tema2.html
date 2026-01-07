@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Tema 2 – Grundlæggende web</title>
+
+  <link rel="stylesheet" href="variables.css" />
+  <link rel="stylesheet" href="general.css" />
+  <link rel="stylesheet" href="typography.css" />
+  <link rel="stylesheet" href="layout.css" />
+  <link rel="stylesheet" href="components.css" />
+  <link rel="stylesheet" href="pages/tema.css" />
+  <link rel="stylesheet" href="themes/light.css" id="theme-css" />
+</head>
+
+<body class="page-tema">
+  <!-- HEADER -->
+  <header class="topbar">
+    <a href="index.html" class="topbar__logo">
+      <img src="sc-logo.webp" alt="Logo" />
+    </a>
+  </header>
+
+  <main class="tema-container">
+    <section class="tema-hero">
+      <h1 class="tema-title">Tema 2 – Grundlæggende web</h1>
+      <p class="tema-text">
+        I Tema 2 arbejdede jeg med HTML og CSS og lærte at opbygge en simpel, responsiv side med tydelig struktur.
+      </p>
+    </section>
+
+    <!-- LØSNING -->
+    <section class="tema-section">
+      <h2 class="tema-heading">Løsning</h2>
+
+      <div class="tema-grid">
+        <div class="tema-text">
+          <p>
+            I Tema 2 lærte jeg at bygge simple websider med fokus på struktur og opbygning.
+            Jeg arbejdede med HTML og CSS, så siden både fungerer og er overskuelig.
+          </p>
+        </div>
+
+        <figure class="tema-image">
+          <img src="mobilesite2.png" alt="Screenshot af Tema 2 løsning" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- PROCES -->
+    <section class="tema-section">
+      <h2 class="tema-heading">Proces</h2>
+
+      <div class="tema-grid reverse">
+        <figure class="tema-image">
+          <img src="wireframe.svg" alt="Proces fra Tema 2" />
+        </figure>
+
+        <div class="tema-text">
+          <p>
+            Jeg startede med at planlægge sidens indhold og struktur. Derefter byggede jeg layoutet med HTML og
+            stylede med CSS, og jeg justerede løbende for at skabe mere luft, bedre hierarki og en tydelig navigation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LÆRING -->
+    <section class="tema-section">
+      <h2 class="tema-heading">Læring</h2>
+
+      <div class="tema-grid">
+        <div class="tema-text">
+          <p>
+            Jeg lærte, at semantisk struktur og god opbygning gør kodning meget lettere. Jeg blev også mere opmærksom
+            på spacing og læsbarhed, så designet ikke føles presset.
+          </p>
+        </div>
+
+        <figure class="tema-image">
+          <img src="2tema2.png" alt="Læring fra Tema 2" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- AFLEVERINGER -->
+<section class="tema-section afleveringer">
+  <h2 class="afleveringer__heading">T02 – GRUNDLÆGGENDE WEB: AFLEVERINGER</h2>
+
+  <!-- Aflevering 1 -->
+  <div class="aflevering-row">
+    <div class="aflevering-info">
+      <div class="aflevering-title">02.01.01 Mobile site</div>
+      <a class="btn"
+         href="https://saracatia.github.io/mobilesite/"
+         target="_blank" rel="noopener noreferrer">
+        Åbn Mobile site (GitHub Pages)
+      </a>
+    </div>
+
+    <div class="aflevering-media">
+      <img src="mobilesite2.png" alt="Screenshot af Mobile site" />
+    </div>
+  </div>
+
+  <!-- Aflevering 2 -->
+  <div class="aflevering-row">
+    <div class="aflevering-info">
+      <div class="aflevering-title">02.01.02 Foto site</div>
+      <a class="btn"
+         href="https://saracatia.github.io/Fotomarthon/"
+         target="_blank" rel="noopener noreferrer">
+        Åbn Foto site (GitHub Pages)
+      </a>
+    </div>
+
+    <div class="aflevering-media">
+      <img src="fotosite.png" alt="Screenshot af Foto site" />
+    </div>
+  </div>
+</section>
+
+    <!-- TEMA NAVIGATION -->
+<nav class="tema-nav" aria-label="Skift mellem temaer">
+  <a class="tema-nav__prev" href="tema1.html">
+    <div class="tema-nav__label">← Forrige</div>
+    <div class="tema-nav__title">T01 – Introuge</div>
+  </a>
+
+  <a class="tema-nav__next" href="tema3.html">
+    <div class="tema-nav__label">Næste →</div>
+    <div class="tema-nav__title">T03 – Grundlæggende UX/UI</div>
+  </a>
+</nav>
+
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar is-closed" aria-label="Hovedmenu">
+    <button class="sidebar__toggle" type="button" aria-label="Åbn/luk menu">▶</button>
+
+    <nav class="menu">
+      <h3 class="menu__title">MENU</h3>
+      <a class="menu__link" href="index.html">FORSIDE</a>
+      <a class="menu__link" href="om-mig.html">OM MIG</a>
+      <a class="menu__link" href="portfolio.html">PORTFOLIO</a>
+
+      <div class="menu__sublinks" aria-label="Portfolio temaer">
+        <a class="menu__sublink" href="tema1.html">T01 – Introuge</a>
+        <a class="menu__sublink" href="tema2.html">T02 – Grundlæggende web</a>
+        <a class="menu__sublink" href="tema3.html">T03 – Grundlæggende UX/UI</a>
+        <a class="menu__sublink" href="tema4.html">T04 – Brugergrænsefladeudvikling</a>
+        <a class="menu__sublink" href="tema5.html">T05 – Grundlæggende indhold</a>
+        <a class="menu__sublink" href="tema6.html">T06 – Portfolio eksamen</a>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- TEMA-SKIFT -->
+  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Skift tema">☾</button>
+
+  <!-- JS -->
+  <script src="dom.js"></script>
+  <script src="storage.js"></script>
+  <script src="nav.js"></script>
+  <script src="theme.js"></script>
+  <script src="main.js"></script>
+  <script src="tema2.js"></script>
+  
+  <footer class="site-footer">
+  <p>Lavet af <strong>Sara Catia</strong></p>
+</footer>
+
+</body>
+</html>
