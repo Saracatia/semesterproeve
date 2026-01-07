@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
     
     const THEME_KEY = "theme";
     const paths = {
-        light: "../css/themes/light.css",
-        dark: "../css/themes/dark.css"
+        light: "light.css",
+        dark: "dark.css"
     };
     
     function setTheme(mode) {
