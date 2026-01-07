@@ -1,0 +1,44 @@
+:root {
+    /* Light theme - RETRO ORANGE */
+    --bg: #f3dbbb;
+    --text: #0e0560;
+    --panel: #e8d9c5;
+    --accent: #ff6b35;
+    --line: #ff6b35;
+    --portfolio-color: #1a2b5f;
+    --shadow-color: rgba(26, 43, 95, 0.3); /* For light theme */
+    --shadow-color: rgba(255, 107, 53, 0.5); /* For dark theme */
+    --transparent-color: rgba(255, 107, 53, 0.3); /* For light theme */
+}
+
+body {
+    background: var(--bg);
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.name-line {
+    font-family: 'Alfa Slab One', serif;
+    font-weight: 400;
+}
+
+.transparent-effect {
+    background: var(--transparent-color);
+    mix-blend-mode: multiply;
+}
+
+.portrait-frame {
+    box-shadow: 15px 15px 0 var(--shadow-color);
+}
+
+.tema-bubble, .sidebar__toggle, .theme-toggle, .menu__link:hover {
+    box-shadow: 5px 5px 0 var(--shadow-color);
+}
+
+.tema-bubble:hover, .theme-toggle:hover {
+    box-shadow: 8px 8px 0 var(--shadow-color);
+}
+
+.portfolio-title h2 {
+    text-shadow: 3px 3px 0 var(--shadow-color);
+}

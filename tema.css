@@ -1,0 +1,233 @@
+.topbar__logo{
+  cursor: pointer;
+  text-decoration: none;
+}
+.topbar__logo img{
+  height: 170px;
+  width: auto;
+}
+
+.tema-container{
+  width: min(1100px, 92vw);
+  margin: 20px auto 80px;
+}
+
+.tema-hero{
+  text-align: center;
+  margin-bottom: 8rem;
+  font-family: "bold", sans-serif;
+}
+
+.tema-text {
+  margin-top: 0.5rem;
+}
+
+.tema-title{
+  font-family: "Verve", "Alfa Slab One Local", serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.tema-section{
+  margin-bottom: 100px;
+}
+
+
+/*løsning, proces, læring*/
+.tema-heading{
+  font-size: clamp(1.6rem, 2vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin-bottom: 1rem;
+margin-top: 0;
+  text-transform: uppercase;
+}
+
+.tema-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.tema-grid.reverse{
+  grid-template-columns: 1fr 1fr;
+}
+
+.tema-text p{
+  font-size: clamp(1rem, 1.1vw, 1.15rem);
+  line-height: 1.6;
+  max-width: 55ch;
+  margin-bottom: 18px;
+}
+
+.tema-image img{
+  width: 100%;
+  border: 2px solid var(--text);
+  box-shadow: 10px 10px 0 var(--shadow-color);
+}
+
+/* Mobil */
+@media (max-width: 900px){
+  .tema-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.sidebar__toggle{
+  position: absolute;
+  top: 50%;
+  left: -32px;
+  transform: translateY(-50%);
+  width: 64px;
+  height: 64px;
+  font-size: 32px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3001;
+  cursor: pointer;
+  box-shadow: 0 0 0 8px var(--bg), 8px 8px 0 var(--shadow-color);
+}
+
+.sidebar{
+  z-index: 4000;
+}
+
+.tema-container h2{
+  font-family: "DynaPuff", "Verve", "Alfa Slab One Local", serif;
+  font-weight: 700; 
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  line-height: 0.95;
+  margin: 70px 0 18px;
+}
+
+
+
+.tema-image img{
+  transform: scale(1.12);
+  transform-origin: center;
+}
+
+.tema-links{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tema-links li{
+  margin-bottom: 12px;
+}
+
+.tema-links a{
+  font-size: 1.05rem;
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity 0.2s ease;
+}
+
+.tema-links a:hover{
+  opacity: 0.7;
+}
+/* ===== AFLEVERINGER ===== */
+.afleveringer__heading{
+  font-family: "Verve", "Alfa Slab One Local", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  line-height: 0.95;
+  margin: 80px 0 60px;
+}
+
+.aflevering-row{
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 2.5rem;
+  align-items: center;
+  margin-bottom: 90px;
+}
+
+.aflevering-title{
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.aflevering-link{
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.aflevering-media img{
+  width: 100%;
+  border: 2px solid var(--text);
+  box-shadow: 10px 10px 0 var(--shadow-color);
+}
+
+@media (max-width: 900px){
+  .aflevering-row{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Tema navigation (forrige/næste) ===== */
+.tema-nav{
+  display: flex;
+  gap: 18px;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 90px 0 0;
+  padding-top: 30px;
+  border-top: 3px solid var(--text);
+}
+
+.tema-nav a{
+  flex: 1;
+  display: block;
+  text-decoration: none;
+  color: var(--text);
+  border: 3px solid var(--text);
+  background: var(--panel);
+  padding: 18px 18px;
+  box-shadow: 10px 10px 0 var(--shadow-color);
+  transition: transform .18s ease, box-shadow .18s ease, opacity .18s ease;
+}
+
+.tema-nav a:hover{
+  transform: translate(-3px, -3px);
+  box-shadow: 13px 13px 0 var(--shadow-color);
+}
+
+.tema-nav a:focus-visible{
+  outline: 3px solid var(--accent);
+  outline-offset: 6px;
+}
+
+.tema-nav__label{
+  font-weight: 900;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  opacity: .75;
+  margin-bottom: 6px;
+}
+
+.tema-nav__title{
+  font-weight: 900;
+  font-size: 1.15rem;
+}
+
+@media (max-width: 900px){
+  .tema-nav{ flex-direction: column; }
+}
+
+.page-tema .tema-container{
+  padding-bottom: 120px;
+}
