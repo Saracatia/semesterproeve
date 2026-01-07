@@ -1,21 +1,34 @@
-(() => {
+document.addEventListener("DOMContentLoaded", () => {
+  const themeLink = document.getElementById("theme-css");
   const btn = document.getElementById("theme-toggle");
-  const link = document.getElementById("theme-css");
 
-  if (!btn || !link) return;
+  if (!themeLink || !btn) return;
 
-  const setTheme = (theme) => {
-    link.setAttribute("href", theme === "dark" ? "dark.css" : "light.css");
-    btn.textContent = theme === "dark" ? "☀" : "☾";
-    localStorage.setItem("theme", theme);
+  const THEME_KEY = "theme";
+  const paths = {
+    light: "light.css",
+    dark: "dark.css",
   };
 
-  // Load saved theme (default light)
-  const saved = localStorage.getItem("theme");
-  if (saved === "dark") setTheme("dark");
+  function setTheme(mode) {
+    themeLink.href = paths[mode];
+    localStorage.setItem(THEME_KEY, mode);
+    btn.textContent = mode === "dark" ? "☀" : "☾";
+    btn.setAttribute(
+      "aria-label",
+      mode === "dark" ? "Skift til lyst tema" : "Skift til mørkt tema"
+    );
+  }
+
+  const saved = localStorage.getItem(THEME_KEY);
+  if (saved) setTheme(saved);
+  else if (window.matchMedia?.("(prefers-color-scheme: dark)").matches) setTheme("dark");
+  else setTheme("light");
 
   btn.addEventListener("click", () => {
-    const current = link.getAttribute("href");
-    setTheme(current === "dark.css" ? "light" : "dark");
+    const isDark = themeLink.href.includes("dark.css");
+    setTheme(isDark ? "light" : "dark");
   });
-})();
+});
+
+
