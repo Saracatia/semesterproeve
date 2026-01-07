@@ -128,7 +128,7 @@
     {
       start: "2025-08",
       meta: "AUG 2025 – NU",
-      title: "Multimediedesigner – KEA/EK",
+      title: "Multimediedesigner – EK",
       desc: "I gang med uddannelsen (start sommer 2025)."
     },
     {
